@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Signup</title>
+	
+	<script src="jquery.js"></script>
+	<style>
+		body
+		{
+			background-image:url('image/bg1.jpg');
+			font-family:"Trebuchet MS",sans-serif;
+			max-height:100%;
+			background-repeat:no-repeat;
+		}
+		
+		.login
+		{
+			height: auto;
+			width: 400px;
+			margin: 150px auto;
+			background: whitesmoke;
+			padding: 20px;
+			border-radius: 10px;
+			text-align: center;
+		}
+		.sign-up
+		{
+			height: auto;
+			width: 400px;
+			margin: 2px auto;
+			background: whitesmoke;
+			padding: 20px;
+			border-radius: 10px;
+			text-align: center;
+		}
+		
+		.login>p,.signup>p
+		{
+			margin:auto;
+		}
+		
+		input[type=text],[type=password],[type=date]
+		{
+			background: whitesmoke;
+			width: 90%;
+			padding: 6px 20px;
+			float:left;;
+			display: inline-block;
+			border-style: solid;
+			border-color: #0210ab;
+			border-width: 0 0 3px 0;
+		}
+		 
+		 input[type=submit],[type=button]
+		 {
+		 	
+		 	color: white;
+		    background-color: #3679EF;
+		    color: white;
+		    padding: 2px 5px;
+		    margin: 8px 10px;
+		    border-radius: 5px;
+		    cursor: pointer;
+		 }
+
+		 #account
+		 {
+		 	font-size: 12px;
+		 }
+		
+	</style>
+</head>
+
+<body>
+			
+			
+			<div class="sign-up" id="b">
+			
+			
+			<p><b>User Register Form</b></p>
+			<form method="post">
+				<p><label for="fname">FullName:</label><br>
+				<input id="fname" name="firstname" placeholder="First name" type="text" required/>
+				<input id="lname" name="lastname" placeholder="Last name" type="text" required/></p>
+				
+				<p><label for="email">Email: </label><br><input id="email" name="email" placeholder="Enter your email" type="text" required/></p>
+				
+				<p><label for="username">Username: </label><br><input id="username" name="username" placeholder="Enter username" type="text" required/></p>
+
+				<p><label for="password">Password: </label><br><input id="password" name="password" placeholder="Enter password" type="password" required/></p>
+				
+				<p><label>Gender:</label><br>
+				<input name="gender" type="radio" value="male"/><label>Male</label>
+				<input name="gender" type="radio" value="female"/><label>Female</label>
+				</p>
+				
+				<p><label>Date of birth: </label><br>
+				<input name="dob" type="date" required/></p>
+				
+				<p>
+				<label>Postal Address:</label><br>
+				<input id="address" name="address" placeholder="Enter your address" type="text" required/>
+				</p>
+				
+				<p>
+				<label>Postal Code:</label><br>
+				<input id="code" name="code" placeholder="Enter your postal code" type="text" required/>
+				</p>
+
+				<p>
+				<label>Pet:</label><br>
+				<input id="pet" name="pet" placeholder="Enter your pet" type="text" required/>
+				</p>
+
+				<p>
+				<label>Phone:</label><br>
+				<input id="phone" name="phone" placeholder="Enter your phone number" type="text" required/>
+				</p>
+				
+				
+
+				<input name="Register" value="Register" type="submit"><a id="account" href="home1.php">Cancel</a>
+			</form>
+			
+			  
+			</div>
+			<script>
+			$(document).ready(function(){	
+				$("#b").hide(500);	
+				
+				$("#btn").click(function(){
+					$("#a").fadeOut(500);
+					$("#b").fadeIn(1500);
+				})
+				
+			});
+			</script>
+	</body>
+	
